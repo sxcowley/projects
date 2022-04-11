@@ -16,13 +16,12 @@ print("Number of objects in list: ")
 print(thisListNum)
 print(thisList)
 
-'''
-f = open("C:\\Users\scowley\OneDrive - Wichita State University\Coding\Python\Projects\generator\genNums.txt")
+#'''
+f = open("C:\Users\scowley\Downloads\genNums.txt")
 print(f.read())
 f.close()
 
-with open("C:\\Users\scowley\OneDrive - Wichita State University\Coding\Python\Projects\generator\genNums.txt", 'a') as file_handler:
+with open("C:\\Users\scowley\Desktop\genNums.txt", 'a') as file_handler:
         for item in thisList:
                 file_handler.write("{} ".format(item))
-                */
-'''                
+#'''                
