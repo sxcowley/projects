@@ -4,7 +4,7 @@ import pickle
 thisList = [0]
 RandTxt = "Random number {} within range (0:10): {}"
 counter = 0
-for a in range(0,10000,1):
+for a in range(0,1000,1):
         randomResult = random.randrange(0,10,1)
         thisList.insert((a), randomResult)
         print(RandTxt.format((a),randomResult))
@@ -17,11 +17,11 @@ print(thisListNum)
 print(thisList)
 
 #'''
-f = open("C:\Users\scowley\Downloads\genNums.txt")
+f = open(r'C:\\Users\\scowley\\Downloads\\genNums.txt')
 print(f.read())
 f.close()
 
-with open("C:\\Users\scowley\Desktop\genNums.txt", 'a') as file_handler:
+with open('C:\\Users\\scowley\\Downloads\\genNums.txt', 'a+') as file_handler:
         for item in thisList:
                 file_handler.write("{} ".format(item))
 #'''                
